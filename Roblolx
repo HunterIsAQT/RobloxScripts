@@ -1,0 +1,168 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("MY GUI", "Synapse")
+
+
+    -- MAIN
+
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Chat Spy", "Lets you see private messages", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/wEf4SuiE'))()
+end)
+
+MainSection:NewButton("Cinematic Camera", "Press Shift + P to go into free cam", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/p7jmfsQT'))()
+end)
+
+MainSection:NewButton("Infinite Yeild", "Admin Commands", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/a2235uWK'))()
+end)
+
+MainSection:NewButton("Avatar Animations", "Changes your avatar animation R15 ONLY", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/CXGg8sRP'))()
+end)
+
+MainSection:NewButton("Anti Afk", "Changes your avatar animation R15 ONLY", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'))()
+end)
+
+MainSection:NewButton("Auto Clicker", "A Gui that lets you auto click", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()'))()
+end)
+
+-- PLAYER
+
+
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "Changes how fast you walk", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpHeight", "Changes how high you jump", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewSlider("Gravity", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Workspace.Gravity = s
+end)
+
+PlayerSection:NewButton("Reset WS/JP/GRAV", "Resets your walkspeed, jumpower, and gravity", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Workspace.Gravity = 196.2
+end)
+
+PlayerSection:NewButton("Wall Walk", "Lets you walk on walls", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/15PCfhHT'))()
+end)
+
+PlayerSection:NewButton("BHop", "Like csgo bhop", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/2PMuskkz'))()
+end)
+
+PlayerSection:NewButton("R-15 FE invisiblity", "Makes you invisible to everybody but yourself", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/hbiPAhqt'))()
+end)
+
+
+-- Teleport 
+
+
+
+-- OTHER
+
+
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+OtherSection:NewButton("Game Download", "Downloads the game to synapse x workspace", function()
+    loadstring(saveinstance())
+end)
+
+OtherSection:NewButton("Shaders", "Turns on shaders", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/sXMP9weW'))()
+end)
+
+OtherSection:NewButton("Chat Translator", "Translates text from other places to english", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GaCgdkTX'))()
+end)
+
+OtherSection:NewButton("Fps booster", "Makes your game look like ass but run better", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Gt3fgy5N'))()
+end)
+
+OtherSection:NewButton("Coordinates Grabber", "Gui that shows your cords and lets you copy", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
+end)
+
+OtherSection:NewButton("Rejoin Game", "Rejoins the current game your in", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
+end)
+
+
+-- Gui's
+
+
+local Gui = Window:NewTab("Gui's")
+local GuiSection = Gui:NewSection("Gui's")
+
+
+GuiSection:NewButton("Nullware V3", "Animation Gui", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/tW1CryD8'))()
+end)
+
+GuiSection:NewButton("Backdoor.exe", "A ss executor!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+end)
+
+-- FE SCRIPTS
+
+local FE = Window:NewTab("Fe")
+local FER6Section = FE:NewSection("R6 Fe scripts")
+
+FER6Section:NewButton("Saitama", "One Punch Man", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/r58XWNJR'))()
+end)
+
+FER6Section:NewButton("Cursor Fling", "Put cursor on a person and hit E", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GFqQfuv3'))()
+end)
+
+FER6Section:NewButton("Neko animation", "Neko", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/xGLMFJRN'))()
+end)
+
+
+local FER15Section = FE:NewSection("R15 Fe scripts")
+
+
+FER15Section:NewButton("Test", "Test", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/r58XWNJR'))()
+end)
+
+local FEHATSSection = FE:NewSection("FE hats used in scripts")
+FEHATSSection:NewButton("Saitama", "Automatically copys the hats used", function()
+    setclipboard("-gh 6470135113")()
+end)
+
+FEHATSSection:NewButton("Neko animation", "Automatically copys the hats used", function()
+    setclipboard("-gh 4645440842")()
+end)
+
+-- Murder Mystery 2 https://www.roblox.com/games/142823291/Murder-Mystery-2
+
+
+if game.PlaceId == 142823291 then
+
+    local MM2 = Window:NewTab("Mm2")
+    local MM2Section = MM2:NewSection("Murder Mystery 2")
+
+    MM2Section:NewButton("Eclipse Gui", "A mm2 gui", function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/x5fG413m'))()
+    end)
+end
