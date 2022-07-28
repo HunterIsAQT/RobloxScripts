@@ -73,6 +73,14 @@ end)
 -- Teleport 
 
 
+local Teleport = Window:NewTab("Teleport")
+local TeleportSection = Teleport:NewSection("Teleport Player")
+
+
+TeleportSection:NewTextBox("Teleport To Player", "Input Players name to teleport", function(txt)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[txt].Character.HumanoidRootPart.CFrame
+end)
+
 
 -- OTHER
 
