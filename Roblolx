@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("MY GUI", "Synapse")
+local Window = Library.CreateLib("V2ly's Gui", "Synapse")
 
 
     -- MAIN
