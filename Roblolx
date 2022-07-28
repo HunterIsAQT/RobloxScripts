@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("V2ly's Gui", "Synapse")
+local Window = Library.CreateLib("MY GUI", "Synapse")
 
 
     -- MAIN
@@ -55,6 +55,10 @@ PlayerSection:NewButton("Reset WS/JP/GRAV", "Resets your walkspeed, jumpower, an
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     game.Workspace.Gravity = 196.2
+end)
+
+PlayerSection:NewButton("Toggable fly", "Press e to fly", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/6rY7DKPA'))()
 end)
 
 PlayerSection:NewButton("Wall Walk", "Lets you walk on walls", function()
