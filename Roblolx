@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("V2ly's Gui", "Synapse")
+local Window = Library.CreateLib("V2ly Gui", "Synapse")
 
 
     -- MAIN
@@ -65,8 +65,8 @@ PlayerSection:NewButton("Wall Walk", "Lets you walk on walls", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/15PCfhHT'))()
 end)
 
-PlayerSection:NewButton("BHop", "Like csgo bhop", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/2PMuskkz'))()
+PlayerSection:NewButton("Infinite Jump", "Lets you jump to infinity and beyond", function()
+    loadstring(game:HttpGet('https://https://pastebin.com/raw/V3DKCQTT'))()
 end)
 
 PlayerSection:NewButton("R-15 FE invisiblity", "Makes you invisible to everybody but yourself", function()
@@ -98,6 +98,11 @@ local OtherSection = Other:NewSection("Other")
 OtherSection:NewButton("Game Download", "Downloads the game to synapse x workspace", function()
     loadstring(saveinstance())
 end)
+
+OtherSection:NewButton("BHop", "Like csgo bhop", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/2PMuskkz'))()
+end)
+
 
 OtherSection:NewButton("Shaders", "Turns on shaders", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/sXMP9weW'))()
