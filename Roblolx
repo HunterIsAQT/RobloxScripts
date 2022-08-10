@@ -21,6 +21,16 @@ MainSection:NewButton("Infinite Yeild", "Admin Commands", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/a2235uWK'))()
 end)
 
+MainSection:NewButton("Rejoin game", "Rejoins your current game", function()
+    local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)()
+end)
+
 MainSection:NewButton("Avatar Animations", "Changes your avatar animation R15 ONLY", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/CXGg8sRP'))()
 end)
@@ -32,6 +42,7 @@ end)
 MainSection:NewButton("Auto Clicker", "A Gui that lets you auto click", function()
     loadstring(game:HttpGet('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()'))()
 end)
+
 
 -- PLAYER
 
@@ -137,6 +148,10 @@ local Gui = Window:NewTab("Gui's")
 local GuiSection = Gui:NewSection("Gui's")
 
 
+GuiSection:NewButton("Audio Stealer", "Steals audios lol", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/kwX9J7VP"))()
+end)
+
 GuiSection:NewButton("Nullware V3", "Animation Gui", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/tW1CryD8'))()
 end)
@@ -152,6 +167,14 @@ local FER6Section = FE:NewSection("R6 Fe scripts")
 
 FER6Section:NewButton("Saitama", "One Punch Man", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/r58XWNJR'))()
+end)
+
+FER6Section:NewButton("Telekinesis V2", "Lets you control unanchored objects", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/7RvHxk2R'))()
+end)
+
+FER6Section:NewButton("Ragdoll Death", "When you reset you do ragdoll", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/uBwuSiaa'))()
 end)
 
 FER6Section:NewButton("Cursor Fling", "Put cursor on a person and hit E", function()
@@ -170,14 +193,6 @@ FER15Section:NewButton("Test", "Test", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/r58XWNJR'))()
 end)
 
-local FEHATSSection = FE:NewSection("FE hats used in scripts")
-FEHATSSection:NewButton("Saitama", "Automatically copys the hats used", function()
-    setclipboard("-gh 6470135113")()
-end)
-
-FEHATSSection:NewButton("Neko animation", "Automatically copys the hats used", function()
-    setclipboard("-gh 4645440842")()
-end)
 
 -- Murder Mystery 2 https://www.roblox.com/games/142823291/Murder-Mystery-2
 
