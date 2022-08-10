@@ -40,7 +40,7 @@ MainSection:NewButton("Anti Afk", "Changes your avatar animation R15 ONLY", func
 end)
 
 MainSection:NewButton("Auto Clicker", "A Gui that lets you auto click", function()
-    loadstring(game:HttpGet('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
 end)
 
 
