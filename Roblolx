@@ -99,6 +99,11 @@ OtherSection:NewButton("Game Download", "Downloads the game to synapse x workspa
     loadstring(saveinstance())
 end)
 
+OtherSection:NewButton("Universal Esp", "Draws boxes, hp, and distance.", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/KsBaS7xu'))()
+end)
+
+
 OtherSection:NewButton("BHop", "Like csgo bhop", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/2PMuskkz'))()
 end)
