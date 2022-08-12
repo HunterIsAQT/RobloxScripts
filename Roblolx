@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("V2ly Gui", "Synapse")
+local Window = Library.CreateLib("V2ly Gui", "DarkTheme")
 
 
     -- MAIN
@@ -31,8 +31,8 @@ local p = game:GetService("Players").LocalPlayer
 ts:Teleport(game.PlaceId, p)()
 end)
 
-MainSection:NewButton("Avatar Animations", "Changes your avatar animation R15 ONLY", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/CXGg8sRP'))()
+MainSection:NewButton("Small Server Teleport", "Teleports you to a small server!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/3ajnuKQ6'))()
 end)
 
 MainSection:NewButton("Anti Afk", "Changes your avatar animation R15 ONLY", function()
@@ -58,19 +58,14 @@ PlayerSection:NewSlider("JumpHeight", "Changes how high you jump", 350, 50, func
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-PlayerSection:NewSlider("Gravity", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+PlayerSection:NewSlider("Gravity", "SliderInfo", 196.2, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Workspace.Gravity = s
-end)
-
-PlayerSection:NewButton("Reset WS/JP/GRAV", "Resets your walkspeed, jumpower, and gravity", function()
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    game.Workspace.Gravity = 196.2
 end)
 
 PlayerSection:NewButton("Toggable fly", "Press e to fly", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/6rY7DKPA'))()
 end)
+
 
 PlayerSection:NewButton("Wall Walk", "Lets you walk on walls", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/15PCfhHT'))()
@@ -100,47 +95,6 @@ TeleportSection:NewButton("Click Tp", "Press CTRL + M1 to teleport", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/qyww70GR'))()
 end)
 
--- OTHER
-
-
-local Other = Window:NewTab("Other")
-local OtherSection = Other:NewSection("Other")
-
-OtherSection:NewButton("Game Download", "Downloads the game to synapse x workspace", function()
-    loadstring(saveinstance())
-end)
-
-OtherSection:NewButton("Universal Esp", "Draws boxes, hp, and distance.", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/KsBaS7xu'))()
-end)
-
-
-OtherSection:NewButton("BHop", "Like csgo bhop", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/2PMuskkz'))()
-end)
-
-
-OtherSection:NewButton("Shaders", "Turns on shaders", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/sXMP9weW'))()
-end)
-
-OtherSection:NewButton("Chat Translator", "Translates text from other places to english", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/GaCgdkTX'))()
-end)
-
-OtherSection:NewButton("Fps booster", "Makes your game look like ass but run better", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/Gt3fgy5N'))()
-end)
-
-OtherSection:NewButton("Coordinates Grabber", "Gui that shows your cords and lets you copy", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
-end)
-
-OtherSection:NewButton("Rejoin Game", "Rejoins the current game your in", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
-end)
-
-
 -- Gui's
 
 
@@ -156,8 +110,8 @@ GuiSection:NewButton("Nullware V3", "Animation Gui", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/tW1CryD8'))()
 end)
 
-GuiSection:NewButton("Backdoor.exe", "A ss executor!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+GuiSection:NewButton("Project Hook", "Combat Warrios gui", function()
+    loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 end)
 
 -- FE SCRIPTS
@@ -191,6 +145,48 @@ local FER15Section = FE:NewSection("R15 Fe scripts")
 
 FER15Section:NewButton("Test", "Test", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/r58XWNJR'))()
+end)
+
+-- OTHER
+
+
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+OtherSection:NewButton("Game Download", "Downloads the game to synapse x workspace", function()
+    loadstring(saveinstance())
+end)
+
+OtherSection:NewButton("Universal Esp", "Draws boxes, hp, and distance.", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/KsBaS7xu'))()
+end)
+
+OtherSection:NewButton("BHop", "Like csgo bhop", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/2PMuskkz'))()
+end)
+
+OtherSection:NewButton("Shaders", "Turns on shaders", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/sXMP9weW'))()
+end)
+
+OtherSection:NewButton("Chat Translator", "Translates text from other places to english", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GaCgdkTX'))()
+end)
+
+OtherSection:NewButton("Fps booster", "Makes your game look like ass but run better", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Gt3fgy5N'))()
+end)
+
+OtherSection:NewButton("Coordinates Grabber", "Gui that shows your cords and lets you copy", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
+end)
+
+OtherSection:NewButton("Rejoin Game", "Rejoins the current game your in", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
+end)
+
+OtherSection:NewKeybind("Gui toggle", "Press right control to toggle gui", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
 end)
 
 
