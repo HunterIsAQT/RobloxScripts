@@ -114,6 +114,11 @@ GuiSection:NewButton("Project Hook", "Combat Warrios gui", function()
     loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 end)
 
+GuiSection:NewButton("Backdoor.exe", "A ss executor", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v8/src/main.lua"))()
+end)
+
+
 -- FE SCRIPTS
 
 local FE = Window:NewTab("Fe")
