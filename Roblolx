@@ -106,6 +106,14 @@ GuiSection:NewButton("Audio Stealer", "Steals audios lol", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/kwX9J7VP"))()
 end)
 
+GuiSection:NewButton("Isle Gui", "A isle gui brah", function()
+    loadstring(game:HttpGet("https://paste.ee/r/ZynFG/0"))()
+end)
+
+GuiSection:NewButton("Sub Place", "See sub places of the game your in", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/C39cfVy1'),true))()
+end)
+
 GuiSection:NewButton("Nullware V3", "Animation Gui", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/tW1CryD8'))()
 end)
@@ -132,8 +140,16 @@ FER6Section:NewButton("Telekinesis V2", "Lets you control unanchored objects", f
     loadstring(game:HttpGet('https://pastebin.com/raw/7RvHxk2R'))()
 end)
 
+FER6Section:NewButton("Skateboard", "A cool af skateboard 😎", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/p4VDuUGD'))()
+end)
+
 FER6Section:NewButton("Ragdoll Death", "When you reset you do ragdoll", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/uBwuSiaa'))()
+end)
+
+FER6Section:NewButton("Zombie", "A zombie that path finds to people!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/KF1uxfwu'))()
 end)
 
 FER6Section:NewButton("Cursor Fling", "Put cursor on a person and hit E", function()
@@ -182,8 +198,8 @@ OtherSection:NewButton("Fps booster", "Makes your game look like ass but run bet
     loadstring(game:HttpGet('https://pastebin.com/raw/Gt3fgy5N'))()
 end)
 
-OtherSection:NewButton("Coordinates Grabber", "Gui that shows your cords and lets you copy", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
+OtherSection:NewButton("Copy Place Id", "Copys the place id of the game your in", function()
+    setclipboard(game.PlaceId)
 end)
 
 OtherSection:NewButton("Rejoin Game", "Rejoins the current game your in", function()
@@ -193,7 +209,6 @@ end)
 OtherSection:NewKeybind("Gui toggle", "Press right control to toggle gui", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
-
 
 -- Murder Mystery 2 https://www.roblox.com/games/142823291/Murder-Mystery-2
 
