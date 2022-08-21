@@ -8,15 +8,6 @@ local Window = Library.CreateLib("V2ly Gui", "DarkTheme")
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
-
-MainSection:NewButton("Chat Spy", "Lets you see private messages", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/wEf4SuiE'))()
-end)
-
-MainSection:NewButton("Cinematic Camera", "Press Shift + P to go into free cam", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/p7jmfsQT'))()
-end)
-
 MainSection:NewButton("Infinite Yeild", "Admin Commands", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/a2235uWK'))()
 end)
@@ -29,10 +20,6 @@ local p = game:GetService("Players").LocalPlayer
  
 
 ts:Teleport(game.PlaceId, p)()
-end)
-
-MainSection:NewButton("Small Server Teleport", "Teleports you to a small server!", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/3ajnuKQ6'))()
 end)
 
 MainSection:NewButton("Anti Afk", "Changes your avatar animation R15 ONLY", function()
@@ -202,6 +189,10 @@ OtherSection:NewButton("Copy Place Id", "Copys the place id of the game your in"
     setclipboard(game.PlaceId)
 end)
 
+OtherSection:NewButton("Small Server Teleport", "Teleports you to a small server!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/3ajnuKQ6'))()
+end)
+
 OtherSection:NewButton("Rejoin Game", "Rejoins the current game your in", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/GdmzzrDz'))()
 end)
@@ -209,6 +200,20 @@ end)
 OtherSection:NewKeybind("Gui toggle", "Press right control to toggle gui", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
+
+
+-- Auto Executes
+
+-- Lets you do emoji's like discord ex, :sob: turns into the sob emoji!
+loadstring(game:HttpGet(('https://pastebin.com/raw/fS4gJxSm'),true))()
+
+-- Chat spy, lets you see private messages
+loadstring(game:HttpGet(('https://pastebin.com/raw/p7jmfsQT'),true))()
+
+
+
+
+
 
 -- Murder Mystery 2 https://www.roblox.com/games/142823291/Murder-Mystery-2
 
@@ -220,5 +225,15 @@ if game.PlaceId == 142823291 then
 
     MM2Section:NewButton("Eclipse Gui", "A mm2 gui", function()
         loadstring(game:HttpGet('https://pastebin.com/raw/x5fG413m'))()
+    end)
+end
+
+if game.PlaceId == 185655149 then
+
+    local Blox = Window:NewTab("Blox Burg")
+    local BloxSection = Blox:NewSection("Auto Farm")
+
+    BloxSection:NewButton("Scar Hub", "Auto Farms Jobs", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))() 
     end)
 end
