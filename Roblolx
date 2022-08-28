@@ -127,6 +127,10 @@ FER6Section:NewButton("Telekinesis V2", "Lets you control unanchored objects", f
     loadstring(game:HttpGet('https://pastebin.com/raw/7RvHxk2R'))()
 end)
 
+FER6Section:NewButton("Nameless Animation V2", "A whole bunch of animations", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/xeJbAVnY'))()
+end)
+
 FER6Section:NewButton("Skateboard", "A cool af skateboard 😎", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/p4VDuUGD'))()
 end)
